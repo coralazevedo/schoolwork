@@ -1,0 +1,55 @@
+
+body {
+	background: #ddd;
+}
+
+/* pizza */
+
+#pizza-slice {
+	position: relative;
+	width: 16em;
+	border: 1px dashed #000;
+	margin: 2em auto;
+}
+
+.dough {
+	font-size: 200%;
+	width: 0;
+	height: 0;
+	line-height: 0;
+	border: 4em dashed transparent;
+	border-top: 0;
+	border-bottom: 8em solid #fc0;
+	border-radius: 3em;
+	}
+
+.pepperoni {
+	font-size: 75%;
+	position: absolute;
+	top: 0;
+	left:0;
+	width: 3em;
+	height: 3em;
+	background: #f00;
+	border-radius: 50%;
+}
+
+#pepperoni-1 {
+	top: 3em;
+	right:0;
+	margin: auto;
+}
+
+#pepperoni-2 {
+	top: 0;
+	left: 3em;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+#pepperoni-3 {
+	top: auto;
+	left: 6em;
+	bottom: 3em;
+}
