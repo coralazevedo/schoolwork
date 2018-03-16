@@ -1,0 +1,33 @@
+body {
+max-width: 60em;
+margin: 0 auto;
+}
+
+p {
+font: 1.2em/1.5em Georgia, serif;
+}
+
+/* h1 Breakpoint */
+
+@media (min-width: 48em) {
+
+h1 {
+font-size: 4em;
+}
+
+}
+
+/* Column Breakpoint */
+
+@media (min-width: 60em) {
+
+.columns .col {
+float: left;
+width: 50%;
+}
+
+.columns .col p {
+font-size: 1.4em;
+}
+
+}
