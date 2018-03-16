@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Animation Demo</title>
+  
+  <style>
+  #stage {
+	position: relative;
+	width: 16em;
+	height: 16em;
+	border: 1px solid #000;
+	margin: auto;
+}
+
+#circle {
+	position: absolute;
+	width: 4em;
+	height: 4em;
+		background: linear-gradient(90deg, #fad, #88CFD6);
+	border-radius: 50%;
+	animation: move 5s infinite, fade-in-out 3s ease-in-out infinite;
+}
+
+@keyframes move {
+	
+	0% {
+		top: 0;
+		left: 0;
+		transform: rotate(0deg);
+	}
+	
+	25% {
+		top: 0;
+		left: 12em;
+		transform: rotate(360deg);
+	}
+	
+	50% {
+		top: 12em;
+		left: 12em;
+		transform: rotate(0deg);
+	}
+	
+	75% {
+		top: 12em;
+		left: 0;
+		transform: rotate(360deg);
+	}
+	
+	100% {
+		top: 0;
+		left: 0;
+		transform: rotate(0deg);
+	}
+}
+  
+@keyframes fade-in-out {
+
+0% {
+opacity: 1;
+}
+
+50% {
+opacity: 0;
+}
+
+100% {
+opacity: 1;
+}
+
+}
+  
+  
+  </style>
+
+  
+</head>
+<body>
+	
+	<div id="stage">
+		
+		<div id="circle"></div>
+		
+		
+	</div>
+
+</body>
+</html>
